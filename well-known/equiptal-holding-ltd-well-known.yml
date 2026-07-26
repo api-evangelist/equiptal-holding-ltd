@@ -1,0 +1,20 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of https://equiptal.net/.well-known/*
+host: https://equiptal.net
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  No /.well-known discovery documents are published. equiptal.net serves a Vite
+  single-page marketing app (catch-all 200); the product surface is the Moedatech
+  mobile apps and web app, which expose no public/documented API. Recorded for
+  auditability; no WellKnown scoring pointer emitted (no 200 hits).

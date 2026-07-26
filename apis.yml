@@ -1,8 +1,17 @@
 aid: equiptal-holding-ltd
 name: EQUIPTAL HOLDING LTD
-description: EQUIPTAL HOLDING LTD is a company surfaced as a portfolio company of 500-global and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  EQUIPTAL HOLDING LTD operates Moedatech (معداتك), Saudi Arabia's first digital
+  procurement and rental marketplace for heavy construction equipment, connecting
+  contractors with verified suppliers of excavators, cranes, and trucks through
+  RFQs, real-time bidding, and audit-ready digital contracts. Founded in Riyadh in
+  2020 by Ali Merie and Mansour Hmaid, the company pairs the marketplace with a
+  telematics/fleet layer (built on Traccar GPS tracking) so equipment owners can
+  monitor real-time asset performance. The product ships as iOS and Android apps
+  plus a web app; there is no publicly documented developer API at this time. The
+  company is backed by 500 Global and Plug and Play Middle East. This profile was
+  surfaced from the 500 Global portfolio and enriched from the company's public
+  web, brand (moedatech.net), and GitHub presence.
 url: https://raw.githubusercontent.com/api-evangelist/equiptal-holding-ltd/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +19,32 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://equiptal.net/logo-icon.svg
 tags:
 - Company
+- Construction
+- Heavy Equipment
+- Equipment Rental
+- Marketplace
+- Procurement
+- Fleet Management
+- Telematics
+- Saudi Arabia
+- Logistics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +54,19 @@ maintainers:
 common:
 - type: Website
   url: https://equiptal.net
+- type: Website
+  name: Moedatech (product brand)
+  url: https://www.moedatech.net/en
+- type: GitHubOrganization
+  url: https://github.com/equiptal
+- type: Blog
+  url: https://www.moedatech.net/en/blog
+- type: Support
+  url: mailto:support@moedatech.com
+- type: DomainSecurity
+  url: security/equiptal-holding-ltd-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
